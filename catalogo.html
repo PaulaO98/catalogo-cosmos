@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo COSMOS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: #111;
+      border-bottom: 2px solid #e63946;
+      padding: 20px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    header h1 span { color: #e63946; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border: 1px solid #333;
+      border-radius: 20px;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      background: #e63946;
+      border-color: #e63946;
+      color: #fff;
+    }
+
+    main { padding: 40px 24px; max-width: 1400px; margin: 0 auto; }
+
+    .ref-section { margin-bottom: 60px; }
+
+    .ref-section h2 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e63946;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .count {
+      font-size: 0.75rem;
+      color: #888;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 1;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 24px rgba(230,57,70,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Lightbox */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #lightbox.active { display: flex; }
+
+    #lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    #lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 28px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      line-height: 1;
+      background: none;
+      border: none;
+    }
+
+    #lightbox-label {
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #444;
+      font-size: 0.8rem;
+      border-top: 1px solid #1f1f1f;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>COSMOS — Catálogo Tennis Importados</h1>
+  <nav>
+<a href="#adx">ADX</a>
+<a href="#ady">ADY</a>
+<a href="#amg">AMG</a>
+<a href="#kahana">KAHANA</a>
+<a href="#lion-fashion">LION FASHION</a>
+<a href="#nx">NX</a>
+<a href="#puma-park-lifestyle">PUMA PARK LIFESTYLE</a>
+<a href="#puma-park-lifestyle-street">PUMA PARK LIFESTYLE STREET</a>
+<a href="#runstar">RUNSTAR</a>
+<a href="#yrx">YRX</a>
+<a href="#yrz">YRZ</a>
+<a href="#yz">YZ</a>
+<a href="#yz-500">YZ 500</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="adx" class="ref-section">
+    <h2>ADX <span class="count">16 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="ADX/11.jpg" alt="11.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/12.jpg" alt="12.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/16.jpg" alt="16.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/17.jpg" alt="17.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/21.jpg" alt="21.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/22.jpg" alt="22.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/23.jpg" alt="23.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/26.jpg" alt="26.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/28.jpg" alt="28.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/40.jpg" alt="40.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/44.jpg" alt="44.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/6.jpg" alt="6.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/65.jpg" alt="65.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/68.webp" alt="68.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/72.jpg" alt="72.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADX/73.webp" alt="73.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="ady" class="ref-section">
+    <h2>ADY <span class="count">11 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="ADY/10.jpg" alt="10.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/17.jpg" alt="17.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/18.jpg" alt="18.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/22.webp" alt="22.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/34.jpg" alt="34.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/36.jpg" alt="36.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/38.webp" alt="38.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/42.webp" alt="42.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/61.jpg" alt="61.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/68.png" alt="68.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="ADY/69.png" alt="69.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="amg" class="ref-section">
+    <h2>AMG <span class="count">12 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="AMG/10.jpg" alt="10.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/11.jpg" alt="11.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/14.png" alt="14.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/19.jpg" alt="19.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/21.png" alt="21.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/23.jpg" alt="23.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/30.png" alt="30.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/32.jpg" alt="32.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/35.jpg" alt="35.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/4.jpg" alt="4.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/8.png" alt="8.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="AMG/9.jpg" alt="9.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="kahana" class="ref-section">
+    <h2>KAHANA <span class="count">5 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="KAHANA/HOMBRE/1.jpg" alt="1.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="KAHANA/HOMBRE/2.jpg" alt="2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="KAHANA/HOMBRE/3.jpg" alt="3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="KAHANA/HOMBRE/4.jpg" alt="4.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="KAHANA/HOMBRE/5.jpg" alt="5.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="lion-fashion" class="ref-section">
+    <h2>LION FASHION <span class="count">10 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="LION FASHION/FOTOS/11.jpg" alt="11.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/12.jpg" alt="12.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/14.jpeg" alt="14.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/2.jpg" alt="2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/3.jpg" alt="3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/4.jpg" alt="4.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/6.jpg" alt="6.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/7.jpg" alt="7.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/8.jpg" alt="8.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="LION FASHION/FOTOS/9.jpg" alt="9.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="nx" class="ref-section">
+    <h2>NX <span class="count">16 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="NX/1.jpg" alt="1.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/10.jpg" alt="10.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/11.jpg" alt="11.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/12.jpg" alt="12.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/17.jpg" alt="17.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/18.jpg" alt="18.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/19.jpg" alt="19.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/2 (2).jpg" alt="2 (2).jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/20.jpg" alt="20.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/21.jpg" alt="21.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/3 (1).jpg" alt="3 (1).jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/4.jpg" alt="4.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/5 (1).jpg" alt="5 (1).jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/6.jpg" alt="6.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/7.jpg" alt="7.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="NX/9 (1).jpg" alt="9 (1).jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="puma-park-lifestyle" class="ref-section">
+    <h2>PUMA PARK LIFESTYLE <span class="count">13 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/FOTOS/1.png" alt="1.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/FOTOS/4.png" alt="4.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/10r.jpeg" alt="10r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/11r.jpeg" alt="11r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/1r.jpeg" alt="1r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/2r.jpeg" alt="2r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/3r.jpeg" alt="3r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/4r.jpeg" alt="4r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/5r.jpeg" alt="5r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/6r.jpeg" alt="6r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/7r.jpeg" alt="7r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/8r.jpeg" alt="8r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE/REF PUMA PARK LIFESTYLE - RXR COMPANY/RESEÑAS/9r.jpeg" alt="9r.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="puma-park-lifestyle-street" class="ref-section">
+    <h2>PUMA PARK LIFESTYLE STREET <span class="count">5 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE STREET /PUMA PARK LIFESTYLE STREET/FOTOS/41 (1).jpg" alt="41 (1).jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE STREET /PUMA PARK LIFESTYLE STREET/FOTOS/41 (2).jpg" alt="41 (2).jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE STREET /PUMA PARK LIFESTYLE STREET/FOTOS/5.jpg" alt="5.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE STREET /PUMA PARK LIFESTYLE STREET/FOTOS/6.jpg" alt="6.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="PUMA PARK LIFESTYLE STREET /PUMA PARK LIFESTYLE STREET/FOTOS/7.jpg" alt="7.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="runstar" class="ref-section">
+    <h2>RUNSTAR <span class="count">28 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/1.jpeg" alt="1.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/17.jpeg" alt="17.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/2.jpeg" alt="2.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/3.jpeg" alt="3.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/4.jpeg" alt="4.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/40.jpeg" alt="40.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/41.jpeg" alt="41.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/49.jpeg" alt="49.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/55.jpeg" alt="55.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/56.jpeg" alt="56.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/6.jpeg" alt="6.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/61.jpeg" alt="61.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/7.jpeg" alt="7.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE ALTO/8.jpeg" alt="8.jpeg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/10.webp" alt="10.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/12.webp" alt="12.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/13.webp" alt="13.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/14.webp" alt="14.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/15.webp" alt="15.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/16.webp" alt="16.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/17.webp" alt="17.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/18.webp" alt="18.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/19.webp" alt="19.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/20.webp" alt="20.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/33.jpg" alt="33.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/42.jpg" alt="42.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/52.jpg" alt="52.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="RUNSTAR/CORTE CORTO/9.webp" alt="9.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="yrx" class="ref-section">
+    <h2>YRX <span class="count">9 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="YRX/BLANCO/10.jpg" alt="10.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/11.jpg" alt="11.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/12.jpg" alt="12.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/13.jpg" alt="13.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/15.jpg" alt="15.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/16.jpg" alt="16.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/18.webp" alt="18.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/19.jpg" alt="19.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRX/BLANCO/9.jpg" alt="9.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="yrz" class="ref-section">
+    <h2>YRZ <span class="count">12 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="YRZ/30.jpg" alt="30.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/31.jpg" alt="31.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/32.jpg" alt="32.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/33.jpg" alt="33.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/34.jpg" alt="34.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/35.jpg" alt="35.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/36.webp" alt="36.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/37.jpg" alt="37.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/38.jpg" alt="38.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/39.webp" alt="39.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/40.webp" alt="40.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YRZ/42.jpg" alt="42.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="yz" class="ref-section">
+    <h2>YZ <span class="count">25 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="YZ/1186803084-1307428745.jpg" alt="1186803084-1307428745.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/435.jpg" alt="435.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/456.jpg" alt="456.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/6.webp" alt="6.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/890.jpg" alt="890.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/DSFS.jpg" alt="DSFS.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/EDIT 2.jpg" alt="EDIT 2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/EDIT 3.jpg" alt="EDIT 3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/H6686f2bdeee14c3b869fe4625cdb889cf.jpg_960x960.webp" alt="H6686f2bdeee14c3b869fe4625cdb889cf.jpg_960x960.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/Ha658702824904bd7a765ad383796f57a9.jpg" alt="Ha658702824904bd7a765ad383796f57a9.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/IMG-20230802-WA0099.jpg" alt="IMG-20230802-WA0099.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01HCVjnt1banrgJiQRH_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" alt="O1CN01HCVjnt1banrgJiQRH_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01IBAJRE1banrfTkJ4p_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" alt="O1CN01IBAJRE1banrfTkJ4p_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01NYrWyz1banrXZGDT2_!!773683482.jpg" alt="O1CN01NYrWyz1banrXZGDT2_!!773683482.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01QBb90l1banrWre2W8_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" alt="O1CN01QBb90l1banrWre2W8_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01QEqsWm1banrcE47L4_!!773683482.jpg" alt="O1CN01QEqsWm1banrcE47L4_!!773683482.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01bWBAnA1banrTfltP3_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" alt="O1CN01bWBAnA1banrTfltP3_!!773683482-0-lubanu-s.jpg_Q75.jpg_.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01e2fnMR1banrTfcd1A_!!773683482.jpg" alt="O1CN01e2fnMR1banrTfcd1A_!!773683482.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01hQJ1Ky1banrWrTyI6_!!773683482.jpg" alt="O1CN01hQJ1Ky1banrWrTyI6_!!773683482.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01iEQ5NW1Xl6OBGBxx9___2201509062963.jpg" alt="O1CN01iEQ5NW1Xl6OBGBxx9___2201509062963.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01ich0kX1banrbP2P0v_!!773683482.jpg" alt="O1CN01ich0kX1banrbP2P0v_!!773683482.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/O1CN01oLr2jV2DdyA91RxRh___300848633.jpg" alt="O1CN01oLr2jV2DdyA91RxRh___300848633.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/aaa84659-8a1a-4273-a05a-020230d51909.jpg" alt="aaa84659-8a1a-4273-a05a-020230d51909.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/bdc6a73b-eee6-4335-8b40-7b94c81cc03b.jpg" alt="bdc6a73b-eee6-4335-8b40-7b94c81cc03b.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ/ce13f6a4-4cb7-4a2f-aa7d-12544b160417.jpg" alt="ce13f6a4-4cb7-4a2f-aa7d-12544b160417.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+  <section id="yz-500" class="ref-section">
+    <h2>YZ 500 <span class="count">9 fotos</span></h2>
+    <div class="grid">
+        <div class="card">
+          <img src="YZ 500/IMAGENES/1e844b0c-7553-476a-b7dd-e65cec399426.webp" alt="1e844b0c-7553-476a-b7dd-e65cec399426.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/4423324238_w640_h640_adidas-yeezy-boost.jpg" alt="4423324238_w640_h640_adidas-yeezy-boost.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/6f99fe09-cad6-46c5-983a-74ec0f2a8298.webp" alt="6f99fe09-cad6-46c5-983a-74ec0f2a8298.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/90e2767f-046e-48c5-90bf-bcaec587d404.webp" alt="90e2767f-046e-48c5-90bf-bcaec587d404.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/a1c9aeca-821d-4277-b2aa-4fed42602862.webp" alt="a1c9aeca-821d-4277-b2aa-4fed42602862.webp" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/cgvc.png" alt="cgvc.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/e21de867-a214-41b1-b4a6-1a8c84641bb7.jpg" alt="e21de867-a214-41b1-b4a6-1a8c84641bb7.jpg" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/tb_image_share_1716688062246.jpg.png" alt="tb_image_share_1716688062246.jpg.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card">
+          <img src="YZ 500/IMAGENES/tb_image_share_1716688169938.jpg.png" alt="tb_image_share_1716688169938.jpg.png" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+  </section>
+</main>
+
+<footer>COSMOS · 171 referencias · 13 modelos</footer>
+
+<div id="lightbox">
+  <button id="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-label"></p>
+</div>
+
+<script>
+  document.querySelectorAll('.card img').forEach(img => {
+    img.addEventListener('click', () => {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-label').textContent = img.alt;
+      document.getElementById('lightbox').classList.add('active');
+    });
+  });
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+  }
+
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>
